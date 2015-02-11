@@ -1,0 +1,27 @@
+// Media Breakpoints
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+
+// Colors
+$dark-grey: #6e6f71;
+$grey: #b5b3b3;
+$light-grey: #bfbfbf;
+$purple: rgb(103, 75, 100);
+$green: #4ca90c;
+$red: #c00000;
+$index-nav-border-color: $light-grey;
+
+// Margins, element sizes, etc.
+$log-out-height: 27px;
+$table-row-height: 41px;
+$topic-title-margin-top: 45px;
+$mobile-menu-height: 2rem;
+$mobile-container-margin: 20px;
+
+// z-index value map
+$zindex: (
+  overlay: 8000,
+  header: 7000
+)

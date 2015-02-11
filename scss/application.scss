@@ -1,0 +1,540 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+//
+// TODO: Nest class styles within their parent ID styles for performance
+//
+
+body {
+  margin: 0;
+}
+
+.log-out {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  background: $purple;
+  margin-left: auto;
+  width: 65px;
+  height: $log-out-height;
+  line-height: $log-out-height; //To vertically align the text
+  text-align: center;
+  color: white;
+  cursor: pointer;
+
+  @media (max-device-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.stripe-bar {
+  height: 6px;
+  background-image: linear-gradient(
+    -45deg,
+    $purple 25%,
+    transparent 25%,
+    transparent 50%,
+    $purple 50%,
+    $purple 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 10px 10px;
+  margin-bottom: 3rem;
+  opacity: 0.35;
+
+  @media (max-device-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+//Container
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 737px;
+  position: relative;
+
+  @media (max-device-width: $screen-xs-max) {
+    width: auto;
+    margin-left: $mobile-container-margin;
+    margin-right: $mobile-container-margin;
+  }
+}
+
+#index-nav-container {
+  text-align: center;
+
+  img {
+    width: 151px;
+    margin-top: 28px;
+  }
+
+  a {
+    color: $purple;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h3, h4, h5 {
+    font-weight: normal;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $dark-grey;
+  }
+
+  h5 {
+    margin-top: 60px;
+    color: $grey;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $light-grey;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 155px;
+    margin: auto;
+    padding: 0; // normalizr should handle this
+    border-top: 1px solid $index-nav-border-color;
+
+    li {
+      border-bottom: 1px solid $index-nav-border-color;
+    }
+  }
+}
+
+// Navigation
+.overlay {
+  background: lighten ($purple, 10%);
+  z-index: map-get($zindex, overlay);
+}
+
+#overlay-nav-view {
+  li {
+    height: 4rem;
+
+    @media (max-device-width: $screen-xs-max) {
+      height: 2.5rem;
+    }
+
+    h1 {
+
+      @media (max-device-width: $screen-xs-max) {
+        font-size: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+
+        &:hover {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .logout-mobile {
+    display: none;
+
+    @media (max-device-width: $screen-xs-max) {
+      display: block;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Overview Hamburger Icon
+
+#trigger-overlay {
+  margin-top: 15px;
+  float: left;
+  width: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (max-device-width: $screen-xs-max) {
+    float: none;
+    display: block;
+    width: auto;
+    margin-top: 0px;
+    height: $mobile-menu-height;
+    background: $purple;
+    margin-left: -15px; //To span entire width
+    margin-right: -15px; //To span entire width
+  }
+
+  // Hamburger icon
+  .overlay-icon {
+    display: block;
+    height: 15px;
+    width: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+
+    // TODO: simplify expression of this gradient (?)
+    background: linear-gradient(
+      to bottom,
+      $purple,
+      $purple 3px,
+      #fff 3px,
+      #fff 6px,
+      $purple 6px,
+      $purple 9px,
+      #fff 9px,
+      #fff 12px,
+      $purple 12px,
+      $purple 15px,
+      #fff 15px,
+      #fff
+    );
+
+    @media (max-device-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  small {
+    color: $purple;
+
+    @media (max-device-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  .mobile-menu-text {
+    display: none;
+
+    @media (max-device-width: $screen-xs-max) {
+      display: block;
+      text-align: center;
+      line-height: $mobile-menu-height;
+      color: white;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// Chart Title
+
+#nav-view {
+  text-align: center //to center .header-title
+}
+.header-title {
+  display: inline-block; //So that div takes up only the width of the div. "Orange Juice" wider than "MMPS"
+  // margin-left: auto;
+  // margin-right: auto;
+  position: relative;
+  // width: 315px;
+  margin-top: 8px;
+
+  .mobile-nav-title {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 18px;
+
+    @media (min-device-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  @media (max-device-width: $screen-xs-max) {
+    width: 207px;
+    margin-top: 26px;
+  }
+
+  .category {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    display: inline;
+    text-transform: uppercase;
+    color: $dark-grey;
+
+    @media (max-device-width: $screen-xs-max) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    display: inline;
+    font-weight: 700;
+    margin-left: 4px;
+    color: $dark-grey;
+
+    @media (max-device-width: $screen-xs-max) {
+      display: block;
+    }
+  }
+
+  .time-period {
+    display: block;
+    margin-left: 3px;
+    color: $light-grey;
+    text-align: left;
+
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
+}
+
+// Header
+.stat-nav {
+  margin-top: 32px;
+  border-bottom: 2px solid $purple;
+
+  @media (max-device-width: $screen-xs-max) {
+    display: none;
+  }
+
+  ul {
+    text-align: justify;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0; //To prevent :after element from taking up an extra line.
+
+    // Shim to help horizontally justify menu elements
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      padding: 5px 9px;
+
+      &:hover {
+        text-decoration: none;
+        background: $purple;
+      }
+      a {
+        padding: 5px 9px;
+        margin: -5px -9px;
+        display: block;
+
+        &.active {
+          background: $purple;
+          color: white;
+        }
+      }
+    }
+  }
+
+  a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: $light-grey;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+//Data
+#brand-view-table {
+  overflow: hidden; //To hide the lines that extend beyond the view
+}
+
+.table-header {
+  background: rgba(255, 255, 255, 0.925);
+  margin-bottom: -$topic-title-margin-top;
+
+  .column-titles {
+    height: 29px;
+    position: relative;
+    text-align: right;
+    margin-top: 33px;
+    line-height: 14px;
+
+    p {
+      color: $light-grey;
+    }
+  }
+}
+
+.table-header.stick {
+  position: fixed;
+  top: 0;
+  z-index: map-get($zindex, header)
+}
+
+.column-title {
+  @extend %placeholder;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topic-title {
+  display: inline-block;
+  margin-bottom: 0; //Should be taken care of with Normalizer
+  margin-top: $topic-title-margin-top;
+  position: relative;
+  color: $purple;
+
+  &:after {
+    content: '';
+    border: 1px solid $light-grey;
+    width: 600px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-left: 12px;
+  }
+}
+
+.arrow {
+  display: none;
+
+  @media (max-device-width: $screen-xs-max) {
+    display: inline-block;
+    position: fixed;
+    width: $mobile-container-margin;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    @extend %vertical-align;
+    display: block;
+
+    img {
+      width: 15px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.table-row {
+  margin-top: 31px;
+  height: 41px;
+
+  .logo-container {
+    width: 92px; //Width of longest logo
+    margin-left: 67px;
+    display: inline-block;
+    text-align: center; //So that all logos center on each other
+    @extend %vertical-align;
+
+    @media (max-device-width: $screen-xs-max) {
+      margin-left: 0px;
+    }
+  }
+
+  .logo {
+    height: 41px;
+
+    @media (max-device-width: $screen-xs-max) {
+      height: 30px;
+    }
+  }
+
+  .table-row-right {
+    float: right;
+    position: relative;
+    line-height: $table-row-height;
+
+    .column-title {
+      @extend %placeholder;
+      display: inline-block;
+
+      h6 {
+        width: $table-row-height;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .percentage-at-month {
+      color: $light-grey;
+    }
+
+    .positive, .negative, .neutral {
+      border-radius: 100%;
+      color: white;
+      font-weight: 700;
+    }
+
+    .positive {
+      background: $green;
+    }
+
+    .negative {
+      background: $red;
+    }
+
+    .neutral {
+      background: white;
+      border: 2px solid $light-grey;
+      color: $light-grey;
+    }
+  }
+}
+
+.summary {
+  margin-top: 55px;
+}
+
+#footer-view {
+  margin-top: 9rem;
+
+  @media (min-device-width: 320px) {
+    p img {
+      content: url('/img/av-logo-mobile.png');
+    }
+  }
+
+  @media only screen and (min-device-width: 1224px) {
+    p img {
+      content: url('/img/av-logo-web.png');
+    }
+  }
+
+  p {
+    color: $light-grey;
+    font-family: 'PT Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  p img {
+    margin-top: 1rem;
+  }
+
+  .line {
+    border: 1px solid $light-grey;
+    margin-bottom: 2rem;
+  }
+}

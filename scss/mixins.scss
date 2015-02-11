@@ -1,0 +1,19 @@
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%placeholder {
+  margin-right: 49px;
+  margin-left: 49px;
+  width: 61px;
+  text-align: center;
+
+  @media (max-device-width: $screen-xs-max) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
