@@ -37,6 +37,7 @@ jQuery(function($) {
             this.datasets = [];
             this.summary = '';
             this.cacheElements();
+
             if (this.isMobile()) {
                 this.mmenu();
             }
@@ -108,13 +109,15 @@ jQuery(function($) {
             this.$overlayNavView.html(this.overlayNavViewTemplate());
 
             // ensure fresh object cache for selector(s) inside the template
-            this.$arrows = $('.arrow');
-            this.$arrowLeft = $('#arrow-left');
-            this.$arrowRight = $('#arrow-right');
             this.$brandViewTable = $('#brand-view-table');
+            if (this.isMobile()) {
+                this.$arrows = $('.arrow');
+                this.$arrowLeft = $('#arrow-left');
+                this.$arrowRight = $('#arrow-right');
 
-            // position mobile left/right navigation arrows
-            this.mobileArrows();
+                // position mobile left/right navigation arrows
+                // this.mobileArrows();
+            }
 
             // append rendered data to the view
             this.$brandViewTable.append(this.datasetTemplate(this.datasets));
@@ -168,9 +171,26 @@ jQuery(function($) {
             if (this.isMobile()) {
                 // bind the slide menu
                 // NOTE: 'trigger-menu' uncached; only referenced here
-                $('#trigger-menu').unbind('click').on('click', function(evt) {
+                $('#trigger-menu').unbind('click').on('click', function(clickEvt) {
+                    clickEvt.preventDefault();
                     this.$menuView.trigger('open.mm');
                 }.bind(this));
+
+                // Mobile left/right 'swipe' arrows (mimics swipe handler)
+                this.$arrowLeft.unbind('click').on('click', function(clickEvt) {
+                    clickEvt.preventDefault();
+                    this.swipeHandler(new Event('swiperight'));
+                }.bind(this));
+
+                this.$arrowRight.unbind('click').on('click', function(clickEvt) {
+                    clickEvt.preventDefault();
+                    this.swipeHandler(new Event('swipeleft'));
+                }.bind(this));
+
+                // swipe actions
+                var hammerManager = new Hammer.Manager(this.$brandView[0]);
+                hammerManager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 0 }));
+                hammerManager.on('swipeleft swiperight', this.swipeHandler);
             }
             else {
                 // desktop browser; bind overlay
@@ -182,22 +202,6 @@ jQuery(function($) {
                 $(window).scroll(this.stickyHandler);
                 this.stickyHandler();
             }
-
-            // Mobile left/right 'swipe' arrows (mimics swipe handler)
-            this.$arrowLeft.unbind('click').on('click', function(clickEvt) {
-                clickEvt.preventDefault();
-                this.swipeHandler(new Event('swiperight'));
-            }.bind(this));
-
-            this.$arrowRight.unbind('click').on('click', function(clickEvt) {
-                clickEvt.preventDefault();
-                this.swipeHandler(new Event('swipeleft'));
-            }.bind(this));
-
-            // swipe actions
-            var hammerManager = new Hammer.Manager(this.$brandView[0]);
-            hammerManager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 0 }));
-            hammerManager.on('swipeleft swiperight', this.swipeHandler);
         },
         swipeHandler: function(evt) {
             var navElement = $('nav.stat-nav .active').parent();
@@ -227,10 +231,10 @@ jQuery(function($) {
                 tableText.css('color', textOriginalColor);
             }
         },
-        mobileArrows: function() {
-            var middleOfWindow = $(window).height() / 2;
-            this.$arrows.css('margin-top', middleOfWindow);
-        }
+        // mobileArrows: function() {
+        //     var middleOfWindow = $(window).height() / 2;
+        //     this.$arrows.css('margin-top', middleOfWindow);
+        // }
     };
 
     App.init();

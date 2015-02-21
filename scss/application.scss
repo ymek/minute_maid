@@ -233,14 +233,12 @@ body {
 }
 .header-title {
   display: inline-block; //So that div takes up only the width of the div. "Orange Juice" wider than "MMPS"
-  // margin-left: auto;
-  // margin-right: auto;
   position: relative;
-  // width: 315px;
   margin-top: 8px;
 
   .mobile-nav-title {
     text-transform: uppercase;
+    display: inline-block;
     margin-top: 15px;
     font-size: 18px;
 
@@ -404,15 +402,15 @@ body {
 
   @media (max-device-width: $screen-xs-max) {
     display: inline-block;
-    position: fixed;
     width: $mobile-container-margin;
     text-align: center;
   }
 
   a {
     text-decoration: none;
-    @extend %vertical-align;
     display: block;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
 
     img {
       width: 15px;
@@ -423,10 +421,12 @@ body {
 
 .left {
   left: 0;
+  float: left;
 }
 
 .right {
   right: 0;
+  float: right;
 }
 
 .table-row {
@@ -442,6 +442,7 @@ body {
 
     @media (max-device-width: $screen-xs-max) {
       margin-left: 0px;
+      width: auto;
     }
   }
 
@@ -512,6 +513,10 @@ body {
     p img {
       content: url('/img/av-logo-web.png');
     }
+  }
+
+  @media (max-device-width: $screen-xs-max) {
+    margin-top: 2rem;
   }
 
   p {
