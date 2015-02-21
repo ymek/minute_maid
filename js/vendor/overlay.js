@@ -3,7 +3,7 @@ jQuery(function($) {
 
     window.Overlay = {
         init: function() {
-            this.$triggerBttn = $('#trigger-overlay');
+            this.$triggerBttn = $('#trigger-menu');
             this.$overlay = $('div.overlay');
             this.$closeBttn = $(this.$overlay, 'button.overlay-close');
             this.transEndEventNames = {

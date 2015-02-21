@@ -14,6 +14,29 @@ jQuery(function($) {
         return new Handlebars.SafeString(result);
     });
 
+    Handlebars.registerHelper('report-subnav', function(endpoint) {
+        var html = '<li>\n';
+        html += '<a href="#">' + endpoint.replace('-', ' ') + '</a>\n';
+        html += '<ul>\n';
+        $.each(
+            [
+                'awareness',
+                'consideration',
+                'brand-imagery',
+                'brand-personality',
+                'summary'
+            ],
+            function(_, value) {
+              var text = value.replace('-', ' ');
+              html += '\t<li><a href="#/' + endpoint + '/' + value + '">' + text + '</a></li>\n';
+            }
+        );
+        html += '</ul>\n';
+        html += '</li>\n';
+
+        return new Handlebars.SafeString(html);
+    });
+
     Handlebars.registerHelper('brand-view-link', function(endpoint) {
         var newPath = '';
         var css = '';

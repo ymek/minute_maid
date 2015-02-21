@@ -5,8 +5,12 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.positioning.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.header.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.footer.css">
+    <link rel="stylesheet" href="/css/vendor/overlay.css">
     <link rel="stylesheet" href="/css/application.css">
-    <link rel="stylesheet" href="/css/overlay.css">
     <!-- Import 'PT Sans' from Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -14,19 +18,14 @@
     <div class="stripe-bar"></div>
     <div class="log-out">LOG OUT</div>
 
-    <!-- mobile arrows -->
-    <div id="arrow-left" class="arrow left">
-      <a href="#"><img src="img/arrow-left.png" alt=""></a>
-    </div>
-    <div id="arrow-right" class="arrow right">
-      <a href="#"><img src="img/arrow-right.png" alt=""></a>
-    </div>
-
     <!-- overlay open/close -->
     <div class="overlay overlay-added-value">
         <button type="button" class="overlay-close">Close</button>
         <nav id="overlay-nav-view"></nav>
     </div>
+
+    <!-- mobile menu -->
+    <nav id="menu-view"></nav>
 
     <div class="container">
         <div id="brand-nav">
@@ -36,15 +35,37 @@
         <div id="footer-view"></div>
     </div>
 
+    <script type="text/x-handlebars-template" id="overlay-nav-view-template">
+        <ul>
+            <li><h1>{{report-type-link 'orange-juice'}}</h1></li>
+            <li><h1>{{report-type-link 'mmps'}}</h1></li>
+            <li><h1>{{report-type-link 'lemonade'}}</h1></li>
+            <li><h1>{{report-type-link 'juice-drinks'}}</h1></li>
+        </ul>
+    </script>
+
     <script type="text/x-handlebars-template" id="nav-view-template">
-        <div id="trigger-overlay">
-            <p class="overlay-icon"></p>
+
+        <div id="trigger-menu">
+            <p class="menu-icon"></p>
             <small>Overview</small>
             <h7 class="mobile-menu-text">MENU<h7>
         </div>
         <div class="header-title">
             <h3 class="category">{{header_title_category}}</h3><p>BRANDVIEW</p>
+
+            <!-- mobile arrow left -->
+            <div id="arrow-left" class="arrow left">
+              <a href="#"><img src="img/arrow-left.png" alt=""></a>
+            </div>
+
             <p class="mobile-nav-title">{{header_mobile_nav_title}}</p>
+
+            <!-- mobile arrow right -->
+            <div id="arrow-right" class="arrow right">
+              <a href="#"><img src="img/arrow-right.png" alt=""></a>
+            </div>
+
             <p class="time-period">{{header_title_period}}</p>
         </div>
         <nav class="stat-nav">
@@ -73,13 +94,12 @@
         </div>
     </script>
 
-    <script type="text/x-handlebars-template" id="overlay-nav-view-template">
+    <script type="text/x-handlebars-template" id="menu-view-template">
         <ul>
-            <li><h1>{{report-type-link 'orange-juice'}}</h1></li>
-            <li><h1>{{report-type-link 'mmps'}}</h1></li>
-            <li><h1>{{report-type-link 'lemonade'}}</h1></li>
-            <li><h1>{{report-type-link 'juice-drinks'}}</h1></li>
-            <li class="logout-mobile"><h1><a>LOG OUT</a></h1></li>
+            {{report-subnav 'orange-juice'}}
+            {{report-subnav 'mmps'}}
+            {{report-subnav 'lemonade'}}
+            {{report-subnav 'juice-drinks'}}
         </ul>
     </script>
 
@@ -148,9 +168,12 @@
     <script src="js/vendor/jquery-2.1.3.min.js"></script>
     <script src="js/vendor/modernizr.custom-2.8.3.js"></script>
     <script src="js/vendor/hammer-2.0.4.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.header.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.footer.min.js"></script>
     <script src="js/vendor/director-1.2.6.min.js"></script>
     <script src="js/vendor/handlebars-v2.0.0.js"></script>
-    <script src="js/overlay.js"></script>
+    <script src="js/vendor/overlay.js"></script>
     <script src="js/handlebars/helpers.js"></script>
     <script src="js/application.js"></script>
 </body>

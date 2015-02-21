@@ -26,6 +26,10 @@ jQuery(function($) {
     //
 
     window.App = {
+        isMobile: function() {
+          var mediaQuery = window.matchMedia('(max-device-width: 767px)');
+          return mediaQuery.matches;
+        },
         init: function() {
             this.pageHeader = {};
             this.pageFooter = {};
@@ -33,7 +37,9 @@ jQuery(function($) {
             this.datasets = [];
             this.summary = '';
             this.cacheElements();
-            this.mobileArrows();
+            if (this.isMobile()) {
+                this.mmenu();
+            }
 
             var currentRoute = window.location.hash.slice(1);
             if (currentRoute.length < 2) {
@@ -99,11 +105,18 @@ jQuery(function($) {
                 this.$brandView.html(this.brandViewTemplate(brandViewContext));
             }
 
-            // ensure fresh object cache for selectors inside the template
-            this.$overlayNavView = $('#overlay-nav-view');
+            this.$overlayNavView.html(this.overlayNavViewTemplate());
+
+            // ensure fresh object cache for selector(s) inside the template
+            this.$arrows = $('.arrow');
+            this.$arrowLeft = $('#arrow-left');
+            this.$arrowRight = $('#arrow-right');
             this.$brandViewTable = $('#brand-view-table');
 
-            this.$overlayNavView.html(this.overlayNavViewTemplate());
+            // position mobile left/right navigation arrows
+            this.mobileArrows();
+
+            // append rendered data to the view
             this.$brandViewTable.append(this.datasetTemplate(this.datasets));
 
             // (re-)bind events
@@ -113,11 +126,31 @@ jQuery(function($) {
             this.$navView = $('#nav-view');
             this.$brandView = $('#brand-view');
             this.$footerView = $('#footer-view');
-            this.$arrows = $('.arrow');
-            this.$arrowLeft = $('#arrow-left');
-            this.$arrowRight = $('#arrow-right');
+            this.$menuView = $('#menu-view');
+            this.$overlayNavView = $('#overlay-nav-view');
             this.indexNavViewTemplate = Handlebars.compile($('#index-nav-view-template').html());
+            this.menuViewTemplate = Handlebars.compile($('#menu-view-template').html());
             this.overlayNavViewTemplate = Handlebars.compile($('#overlay-nav-view-template').html());
+        },
+        mmenu: function() {
+            this.$menuView.html(this.menuViewTemplate());
+            this.$menuView.mmenu({
+                onClick: {
+                    close: true,
+                    preventDefault: false,
+                    setSelected: true
+                },
+                offCanvas: {
+                    position: 'left',
+                    zposition: 'next'
+                },
+                header: true,
+                footer: {
+                    add: true,
+                    // TODO: Use Handlebars template? Too much?
+                    content: '<a href="#">Log Out</a>'
+                }
+            });
         },
         renderIndexNav: function() {
             $.when(Api.load('/api/index.json')).done(function() {
@@ -132,30 +165,39 @@ jQuery(function($) {
             }.bind(this));
         },
         bindEventHandlers: function() {
-          // overlay javascript
-          Overlay.init();
+            if (this.isMobile()) {
+                // bind the slide menu
+                // NOTE: 'trigger-menu' uncached; only referenced here
+                $('#trigger-menu').unbind('click').on('click', function(evt) {
+                    this.$menuView.trigger('open.mm');
+                }.bind(this));
+            }
+            else {
+                // desktop browser; bind overlay
+                Overlay.init();
+            }
 
-          // 'sticky' nav - nonexistent on summary pages
-          if (this.endpoint.lastIndexOf('summary') < 0) {
-              $(window).scroll(this.stickyHandler);
-              this.stickyHandler();
-          }
+            // 'sticky' nav - nonexistent on summary pages
+            if (this.endpoint.lastIndexOf('summary') < 0) {
+                $(window).scroll(this.stickyHandler);
+                this.stickyHandler();
+            }
 
-          // Mobile left/right 'swipe' arrows (mimics swipe handler)
-          this.$arrowLeft.unbind('click').on('click', function(clickEvt) {
-              clickEvt.preventDefault();
-              this.swipeHandler(new Event('swiperight'));
-          }.bind(this));
+            // Mobile left/right 'swipe' arrows (mimics swipe handler)
+            this.$arrowLeft.unbind('click').on('click', function(clickEvt) {
+                clickEvt.preventDefault();
+                this.swipeHandler(new Event('swiperight'));
+            }.bind(this));
 
-          this.$arrowRight.unbind('click').on('click', function(clickEvt) {
-              clickEvt.preventDefault();
-              this.swipeHandler(new Event('swipeleft'));
-          }.bind(this));
+            this.$arrowRight.unbind('click').on('click', function(clickEvt) {
+                clickEvt.preventDefault();
+                this.swipeHandler(new Event('swipeleft'));
+            }.bind(this));
 
-          // swipe actions
-          var hammerManager = new Hammer.Manager(this.$brandView[0]);
-          hammerManager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 0 }));
-          hammerManager.on('swipeleft swiperight', this.swipeHandler);
+            // swipe actions
+            var hammerManager = new Hammer.Manager(this.$brandView[0]);
+            hammerManager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 0 }));
+            hammerManager.on('swipeleft swiperight', this.swipeHandler);
         },
         swipeHandler: function(evt) {
             var navElement = $('nav.stat-nav .active').parent();

@@ -10,6 +10,59 @@ body {
   margin: 0;
 }
 
+//
+// Navigaion
+//
+
+// Override slide-menu submenu buttons
+.mm-list a.mm-subopen {
+  width: 100%;
+}
+
+// header text, menu links, menu footer links
+.mm-header .mm-title,
+.mm-footer > a,
+.mm-list > li a {
+  color: $light-grey;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+// menu prev/next buttons
+.mm-menu .mm-header .mm-prev:before,
+.mm-menu .mm-header .mm-next:after,
+.mm-menu .mm-header .mm-close:after,
+.mm-menu .mm-list > li > a.mm-subopen:after,
+.mm-menu .mm-list > li > a.mm-subclose:before {
+  border-color: $light-grey;
+}
+
+.overlay {
+  background: lighten ($purple, 10%);
+  z-index: map-get($zindex, overlay);
+}
+
+#overlay-nav-view {
+  li {
+    height: 4rem;
+
+    h1 {
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+
+        &:hover {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
 .log-out {
   position: absolute;
   top: 0;
@@ -20,7 +73,7 @@ body {
   margin-left: auto;
   width: 65px;
   height: $log-out-height;
-  line-height: $log-out-height; //To vertically align the text
+  line-height: $log-out-height; // To vertically align the text
   text-align: center;
   color: white;
   cursor: pointer;
@@ -51,7 +104,7 @@ body {
   }
 }
 
-//Container
+// Container
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -116,52 +169,8 @@ body {
   }
 }
 
-// Navigation
-.overlay {
-  background: lighten ($purple, 10%);
-  z-index: map-get($zindex, overlay);
-}
-
-#overlay-nav-view {
-  li {
-    height: 4rem;
-
-    @media (max-device-width: $screen-xs-max) {
-      height: 2.5rem;
-    }
-
-    h1 {
-
-      @media (max-device-width: $screen-xs-max) {
-        font-size: 30px;
-      }
-
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-
-        &:hover {
-          text-decoration: underline;
-          color: white;
-        }
-      }
-    }
-  }
-
-  .logout-mobile {
-    display: none;
-
-    @media (max-device-width: $screen-xs-max) {
-      display: block;
-      text-decoration: underline;
-    }
-  }
-}
-
 // Overview Hamburger Icon
-
-#trigger-overlay {
+#trigger-menu {
   margin-top: 15px;
   float: left;
   width: 48px;
@@ -169,19 +178,8 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 
-  @media (max-device-width: $screen-xs-max) {
-    float: none;
-    display: block;
-    width: auto;
-    margin-top: 0px;
-    height: $mobile-menu-height;
-    background: $purple;
-    margin-left: -15px; //To span entire width
-    margin-right: -15px; //To span entire width
-  }
-
   // Hamburger icon
-  .overlay-icon {
+  .menu-icon {
     display: block;
     height: 15px;
     width: 1.25rem;
@@ -205,10 +203,6 @@ body {
       #fff 15px,
       #fff
     );
-
-    @media (max-device-width: $screen-xs-max) {
-      display: none;
-    }
   }
 
   small {
