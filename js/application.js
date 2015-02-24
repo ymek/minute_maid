@@ -171,7 +171,7 @@ jQuery(function($) {
             if (this.isMobile()) {
                 // bind the slide menu
                 // NOTE: 'trigger-menu' uncached; only referenced here
-                $('#trigger-menu').unbind('click').on('click', function(clickEvt) {
+                $('.trigger-menu').unbind('click').on('click', function(clickEvt) {
                     clickEvt.preventDefault();
                     this.$menuView.trigger('open.mm');
                 }.bind(this));

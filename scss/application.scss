@@ -368,9 +368,10 @@ body {
   background: rgba(255, 255, 255, 0.925);
   margin-bottom: -$topic-title-margin-top;
 
-  $column-titles-margin-top: 33px;
   .trigger-menu {
     display: none;
+    position: relative;
+    z-index: 10;
     margin-top: $column-titles-margin-top;
   }
 

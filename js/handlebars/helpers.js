@@ -58,10 +58,15 @@ jQuery(function($) {
     });
 
     Handlebars.registerHelper('delta-view-row', function(delta) {
-      var value = parseInt(delta['value']);
-      var cssClass = delta['change'];
-      var sign = (value > 0) ? '+' : '';
+      if (delta === undefined) {
+        return '<h6 class="' + cssClass + '">' + '</h6>';
 
-      return '<h6 class="' + cssClass + '">' + sign + value + '</h6>';
+      } else {
+        var value = parseInt(delta['value']);
+        var cssClass = delta['change'];
+        var sign = (value > 0) ? '+' : '';
+
+        return '<h6 class="' + cssClass + '">' + sign + value + '</h6>';
+      }
     });
 });
