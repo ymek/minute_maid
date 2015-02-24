@@ -209,7 +209,7 @@ html.mm-opened .mm-page {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
 
 .mm-menu {
-  background: #333333;
+  background: rgb(103, 75, 100);
   color: rgba(255, 255, 255, 0.6); }
   .mm-menu .mm-list > li:after {
     border-color: rgba(0, 0, 0, 0.15); }

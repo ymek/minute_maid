@@ -225,10 +225,12 @@ jQuery(function($) {
                 tableHeader.css('width', containerWidth);
                 tableText.css('color', textDarkColor);
                 tableHeader.addClass('stick');
+                tableHeader.find('.trigger-menu').addClass('show')
             }
             else {
                 tableHeader.removeClass('stick');
                 tableText.css('color', textOriginalColor);
+                tableHeader.find('.trigger-menu').removeClass('show')
             }
         },
         // mobileArrows: function() {

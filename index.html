@@ -45,8 +45,8 @@
     </script>
 
     <script type="text/x-handlebars-template" id="nav-view-template">
-        
-        <div id="trigger-menu">
+
+        <div class="trigger-menu">
             <p class="menu-icon"></p>
             <small>Overview</small>
             <h7 class="mobile-menu-text">MENU<h7>
@@ -122,10 +122,17 @@
 
     <script type="text/x-handlebars-template" id="brand-view-template">
         {{#if percentage_header}}
-          <div id="brand-view-table">
-              <div class="table-header-anchor"></div>
-              <div class="table-header">
-                  <div class="column-titles">
+            <div id="brand-view-table">
+                <div class="table-header-anchor"></div>
+                <div class="table-header">
+
+                    <div class="trigger-menu">
+                        <p class="menu-icon"></p>
+                        <small>Overview</small>
+                        <h7 class="mobile-menu-text">MENU<h7>
+                    </div>
+
+                    <div class="column-titles">
                       <div class="column-title">
                           <p>{{{percentage_header}}}</p>
                       </div>
@@ -135,8 +142,8 @@
                       <div class="column-title">
                           <p>{{{delta_stly_header}}}</p>
                       </div>
-                  </div>
-              </div>
+                    </div>
+                </div>
           </div>
         {{/if}}
     </script>

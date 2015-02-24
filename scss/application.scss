@@ -170,13 +170,17 @@ body {
 }
 
 // Overview Hamburger Icon
-#trigger-menu {
+.trigger-menu {
   margin-top: 15px;
   float: left;
   width: 48px;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (max-device-width: $screen-xs-max) {
+    margin-top: 11px;
+  }
 
   // Hamburger icon
   .menu-icon {
@@ -235,6 +239,12 @@ body {
   display: inline-block; //So that div takes up only the width of the div. "Orange Juice" wider than "MMPS"
   position: relative;
   margin-top: 8px;
+
+  @media (max-device-width: $screen-xs-max) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .mobile-nav-title {
     text-transform: uppercase;
@@ -350,14 +360,25 @@ body {
   overflow: hidden; //To hide the lines that extend beyond the view
 }
 
+.show {
+  display: block !important;
+}
+
 .table-header {
   background: rgba(255, 255, 255, 0.925);
   margin-bottom: -$topic-title-margin-top;
+
+  $column-titles-margin-top: 33px;
+  .trigger-menu {
+    display: none;
+    margin-top: $column-titles-margin-top;
+  }
 
   .column-titles {
     height: 29px;
     position: relative;
     text-align: right;
+
     margin-top: 33px;
     line-height: 14px;
 
