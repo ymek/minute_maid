@@ -124,6 +124,9 @@ jQuery(function($) {
 
             // (re-)bind events
             this.bindEventHandlers();
+
+            // Hackish way of hiding "Brand Personality" for MMPS
+            $("[href='#/mmps/brand-personality']").parent('li').css('display', 'none')
         },
         cacheElements: function() {
             this.$navView = $('#nav-view');
@@ -233,11 +236,8 @@ jQuery(function($) {
                 tableHeader.find('.trigger-menu').removeClass('show')
             }
         },
-        // mobileArrows: function() {
-        //     var middleOfWindow = $(window).height() / 2;
-        //     this.$arrows.css('margin-top', middleOfWindow);
-        // }
     };
 
     App.init();
+
 });
