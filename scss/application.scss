@@ -24,7 +24,7 @@ body {
 .mm-footer > a,
 .mm-list > li a {
   color: $light-grey;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -451,6 +451,11 @@ body {
   float: right;
 }
 
+// To make sure left arrow doesn't show in "Awareness" and right arrow doesn't show in "Summary"
+div#arrow-left.arrow.left.awareness, div#arrow-right.arrow.right.summary {
+  display: none;
+}
+
 .table-row {
   margin-top: 31px;
   height: 41px;
@@ -518,8 +523,10 @@ body {
   }
 }
 
-.summary {
-  margin-top: 55px;
+#brand-view {
+  .summary {
+    margin-top: 55px;
+  }
 }
 
 #footer-view {
