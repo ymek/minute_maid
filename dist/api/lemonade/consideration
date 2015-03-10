@@ -1,0 +1,181 @@
+{
+  "page_header": {
+    "category": "Lemonade",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Green/Red Color indicates significant difference vs. Dec’14 and STLY"
+  },
+  "data_header": {
+    "percentage_header": "Jan'15",
+    "delta_month_header": "Δ from Dec'14",
+    "delta_stly_header": "Δ from STLY"
+  },
+  "datasets": [
+    {
+      "title": "#1 Favorite",
+      "brands": [
+        {
+          "icon_image": "minute_maid_lemonade.png",
+          "percentage_at_month": "16",
+          "delta_at_month": {
+            "value": "-3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "simply_lemonade.png",
+          "percentage_at_month": "27",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "5",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana_lemonade.png",
+          "percentage_at_month": "7",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "0",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Total Favorite",
+      "brands": [
+        {
+          "icon_image": "minute_maid_lemonade.png",
+          "percentage_at_month": "36",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_lemonade.png",
+          "percentage_at_month": "37",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "5",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana_lemonade.png",
+          "percentage_at_month": "14",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-3",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Definitely/Probably Will Buy",
+      "brands": [
+        {
+          "icon_image": "minute_maid_lemonade.png",
+          "percentage_at_month": "51",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-4",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_lemonade.png",
+          "percentage_at_month": "50",
+          "delta_at_month": {
+            "value": "2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "6",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana_lemonade.png",
+          "percentage_at_month": "41",
+          "delta_at_month": {
+            "value": "3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "1",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Best (among aware)",
+      "brands": [
+        {
+          "icon_image": "minute_maid_lemonade.png",
+          "percentage_at_month": "17",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_lemonade.png",
+          "percentage_at_month": "30",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "2",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana_lemonade.png",
+          "percentage_at_month": "12",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "0",
+            "change": "neutral"
+          }
+        }
+      ]
+    }
+  ]
+}

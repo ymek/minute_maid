@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.positioning.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.header.css">
+    <link rel="stylesheet" href="/css/vendor/jquery.mmenu.footer.css">
+    <link rel="stylesheet" href="/css/vendor/overlay.css">
+    <link rel="stylesheet" href="/css/application.css">
+    <!-- Import 'PT Sans' from Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="stripe-bar"></div>
+    <div class="log-out">LOG OUT</div>
+
+    <!-- overlay open/close -->
+    <div class="overlay overlay-added-value">
+        <button type="button" class="overlay-close">Close</button>
+        <nav id="overlay-nav-view"></nav>
+    </div>
+
+    <!-- mobile menu -->
+    <nav id="menu-view"></nav>
+
+    <div class="container">
+        <div id="brand-nav">
+            <nav id="nav-view"></nav>
+        </div>
+        <div id="brand-view"></div>
+        <div id="footer-view"></div>
+    </div>
+
+    <script type="text/x-handlebars-template" id="overlay-nav-view-template">
+        <ul>
+            <li><h1>{{report-type-link 'orange-juice'}}</h1></li>
+            <li><h1>{{report-type-link 'mmps'}}</h1></li>
+            <li><h1>{{report-type-link 'lemonade'}}</h1></li>
+            <li><h1>{{report-type-link 'juice-drinks'}}</h1></li>
+        </ul>
+    </script>
+
+    <script type="text/x-handlebars-template" id="nav-view-template">
+
+        <div class="trigger-menu">
+            <p class="menu-icon"></p>
+            <small>Overview</small>
+            <h7 class="mobile-menu-text">MENU<h7>
+        </div>
+        <div class="header-title">
+            <h3 class="category">{{header_title_category}}</h3><p>BRANDVIEW</p>
+
+            <!-- mobile arrow left -->
+            <div id="arrow-left" class="arrow left {{header_mobile_nav_title}}">
+              <a href="#"><img src="img/arrow-left.png" alt=""></a>
+            </div>
+
+            <p class="mobile-nav-title">{{header_mobile_nav_title}}</p>
+
+            <!-- mobile arrow right -->
+            <div id="arrow-right" class="arrow right {{header_mobile_nav_title}}">
+              <a href="#"><img src="img/arrow-right.png" alt=""></a>
+            </div>
+
+            <p class="time-period">{{header_title_period}}</p>
+        </div>
+        <nav class="stat-nav">
+            <ul>
+                <li>{{brand-view-link 'awareness'}}</li>
+                <li>{{brand-view-link 'consideration'}}</li>
+                <li>{{brand-view-link 'brand-imagery'}}</li>
+                <li>{{brand-view-link 'brand-personality'}}</li>
+                <li>{{brand-view-link 'summary'}}</li>
+            </ul>
+        </nav>
+   </script>
+
+    <script type="text/x-handlebars-template" id="index-nav-view-template">
+        <div id="index-nav-container">
+            <img src="{{logo_image}}">
+            <h3>{{headline}}</h3>
+            <p>{{{date_range}}}</p>
+            <h5>Please select one</h5>
+            <ul>
+                <li><h4>{{report-type-link 'orange-juice'}}</h4></li>
+                <li><h4>{{report-type-link 'mmps'}}</h4></li>
+                <li><h4>{{report-type-link 'lemonade'}}</h4></li>
+                <li><h4>{{report-type-link 'juice-drinks'}}</h4></li>
+            </ul>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="menu-view-template">
+        <ul>
+            {{report-subnav 'orange-juice'}}
+            {{report-subnav 'mmps'}}
+            {{report-subnav 'lemonade'}}
+            {{report-subnav 'juice-drinks'}}
+        </ul>
+    </script>
+
+    <script type="text/x-handlebars-template" id="footer-view-template">
+        <div class="line"></div>
+        <div>
+            <p>{{date_summary}}</p>
+            <p>{{notes}}</p>
+            <p>
+                <img src=""
+                    data-src-mobile="img/av-logo-mobile.png"
+                    data-src-web="img/av-logo-web.png">
+            </p>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="brand-summary-template">
+        <p class="summary">{{{summary}}}</p>
+    </script>
+
+    <script type="text/x-handlebars-template" id="brand-view-template">
+        {{#if percentage_header}}
+            <div id="brand-view-table">
+                <div class="table-header-anchor"></div>
+                <div class="table-header">
+
+                    <div class="trigger-menu">
+                        <p class="menu-icon"></p>
+                        <small>Overview</small>
+                        <h7 class="mobile-menu-text">MENU<h7>
+                    </div>
+
+                    <div class="column-titles">
+                      <div class="column-title">
+                          <p>{{{percentage_header}}}</p>
+                      </div>
+                      <div class="column-title">
+                          <p>{{{delta_month_header}}}</p>
+                      </div>
+                      <div class="column-title">
+                          <p>{{{delta_stly_header}}}</p>
+                      </div>
+                    </div>
+                </div>
+          </div>
+        {{/if}}
+    </script>
+
+    <script type="text/x-handlebars-template" id="dataset-template">
+        {{#this}}
+            <h5 class="topic-title">{{title}}</h5>
+            {{#each brands}}
+                <div class="table-row">
+                    <div class="logo-container">
+                        <img class="logo" src="{{icon_image}}">
+                    </div>
+                    <div class="table-row-right">
+                        <div class="column-title percentage-at-month">
+                            <h6>{{percentage_at_month}}%</h6>
+                        </div>
+                        <div class="column-title delta-at-month">
+                            {{{delta-view-row delta_at_month}}}
+                        </div>
+                        <div class="column-title delta-stly">
+                            {{{delta-view-row delta_stly}}}
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{/this}}
+    </script>
+
+    <script src="js/vendor/jquery-2.1.3.min.js"></script>
+    <script src="js/vendor/modernizr.custom-2.8.3.js"></script>
+    <script src="js/vendor/hammer-2.0.4.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.header.min.js"></script>
+    <script src="js/vendor/jquery.mmenu.footer.min.js"></script>
+    <script src="js/vendor/director-1.2.6.min.js"></script>
+    <script src="js/vendor/handlebars-v2.0.0.js"></script>
+    <script src="js/vendor/overlay.js"></script>
+    <script src="js/handlebars/helpers.js"></script>
+    <script src="js/application.js"></script>
+</body>
+</html>

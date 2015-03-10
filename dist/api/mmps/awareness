@@ -1,0 +1,34 @@
+{
+  "page_header": {
+    "category": "MMPS",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Green/Red Color indicates significant difference vs. Dec’14 and STLY"
+  },
+  "data_header": {
+    "percentage_header": "Jan'15",
+    "delta_month_header": "Δ from Dec'14",
+    "delta_stly_header": "Δ from STLY"
+  },
+  "datasets": [
+    {
+      "title": "Total Awareness",
+      "brands": [
+        {
+          "icon_image": "mmps-mm-logo.png",
+          "percentage_at_month": "56",
+          "delta_at_month": {
+            "value": "3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "9",
+            "change": "positive"
+          }
+        }
+      ]
+    }
+  ]
+}

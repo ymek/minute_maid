@@ -1,0 +1,236 @@
+{
+  "page_header": {
+    "category": "Juice Drinks",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Among aware & familiar. Green/Red color indicates significant difference vs. Dec'14 and STYL."
+  },
+  "data_header": {
+    "percentage_header": "Jan'15"
+  },
+  "datasets": [
+    {
+      "title": "Best Tasting",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "42"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "43"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "41"
+        }
+      ]
+    },
+    {
+      "title": "Purest",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "29"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "44"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "32"
+        }
+      ]
+    },
+    {
+      "title": "Contains Real Fruit Juice",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "51"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "55"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "53"
+        }
+      ]
+    },
+    {
+      "title": "Has No Artificial Ingredients",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "31"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "44"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "30"
+        }
+      ]
+    },
+    {
+      "title": "More Authentic Than Other Juice Drinks",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "35"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "42"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "36"
+        }
+      ]
+    },
+    {
+      "title": "Refreshing",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "53"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "52"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "55"
+        }
+      ]
+    },
+    {
+      "title": "Fun To Drink",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "45"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "41"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "44"
+        }
+      ]
+    },
+    {
+      "title": "High Quality",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "52"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "51"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "56"
+        }
+      ]
+    },
+    {
+      "title": "For Someone Like Me",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "47"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "45"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "50"
+        }
+      ]
+    },
+    {
+      "title": "Best At Meeting My Needs",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "40"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "33"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "41"
+        }
+      ]
+    },
+    {
+      "title": "Brand Family Enjoys",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "47"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "41"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "43"
+        }
+      ]
+    },
+    {
+      "title": "Good Value",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "41"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "30"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "36"
+        }
+      ]
+    },
+    {
+      "title": "Leader In Health & Wellness",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "38"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "34"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "43"
+        }
+      ]
+    }
+  ]
+}

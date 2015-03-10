@@ -384,7 +384,7 @@ body {
     line-height: 14px;
 
     p {
-      color: $light-grey;
+      color: $grey;
     }
   }
 }
@@ -498,7 +498,7 @@ div#arrow-left.arrow.left.awareness, div#arrow-right.arrow.right.summary {
     }
 
     .percentage-at-month {
-      color: $light-grey;
+      color: $dark-grey;
     }
 
     .positive, .negative, .neutral {
@@ -517,8 +517,8 @@ div#arrow-left.arrow.left.awareness, div#arrow-right.arrow.right.summary {
 
     .neutral {
       background: white;
-      border: 2px solid $light-grey;
-      color: $light-grey;
+      border: 2px solid $grey;
+      color: $grey;
     }
   }
 }

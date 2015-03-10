@@ -1,0 +1,66 @@
+{
+  "page_header": {
+    "category": "Juice Drinks",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Green/Red Color indicates significant difference vs. Dec’14 and STLY"
+  },
+  "data_header": {
+    "percentage_header": "Jan'15"
+  },
+  "datasets": [
+    {
+      "title": "Total Ad Awareness",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "30"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "17"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "29"
+        }
+      ]
+    },
+    {
+      "title": "Unaided Brand Awareness",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "29"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "10"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "23"
+        }
+      ]
+    },
+    {
+      "title": "Total Brand Awareness",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "96"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "72"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "92"
+        }
+      ]
+    }
+  ]
+}

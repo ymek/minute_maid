@@ -1,0 +1,134 @@
+{
+  "page_header": {
+    "category": "Juice Drinks",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Among aware & familiar. Green/Red color indicates significant difference vs. Dec'14 and STYL."
+  },
+  "data_header": {
+    "percentage_header": "Jan'15"
+  },
+  "datasets": [
+    {
+      "title": "Choosey",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "20"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "30"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "28"
+        }
+      ]
+    },
+    {
+      "title": "Exciting",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "28"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "25"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "30"
+        }
+      ]
+    },
+    {
+      "title": "Nurturing",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "37"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "39"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "33"
+        }
+      ]
+    },
+    {
+      "title": "Outdated",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "14"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "8"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "9"
+        }
+      ]
+    },
+    {
+      "title": "Uncomplicated",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "37"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "46"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "33"
+        }
+      ]
+    },
+    {
+      "title": "Unique",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "26"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "36"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "30"
+        }
+      ]
+    },
+    {
+      "title": "Wholesome",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "46"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "45"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "47"
+        }
+      ]
+    }
+  ]
+}

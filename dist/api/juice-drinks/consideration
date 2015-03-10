@@ -1,0 +1,83 @@
+{
+  "page_header": {
+    "category": "Juice Drinks",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Green/Red Color indicates significant difference vs. Dec’14 and STLY"
+  },
+  "data_header": {
+    "percentage_header": "Jan'15"
+  },
+  "datasets": [
+    {
+      "title": "#1 Favorite",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "9"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "6"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "11"
+        }
+      ]
+    },
+    {
+      "title": "Total Favorite",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "18"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "9"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "19"
+        }
+      ]
+    },
+    {
+      "title": "Definitely/Probably Will Buy",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "61"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "44"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "55"
+        }
+      ]
+    },
+    {
+      "title": "The Best (among aware)",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "15"
+        },
+        {
+          "icon_image": "simply_juice.png",
+          "percentage_at_month": "15"
+        },
+        {
+          "icon_image": "ocean_spray.png",
+          "percentage_at_month": "17"
+        }
+      ]
+    }
+  ]
+}

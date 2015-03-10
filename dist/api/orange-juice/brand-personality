@@ -1,0 +1,388 @@
+{
+  "page_header": {
+    "category": "Orange Juice",
+    "period": "3 months ending Jan'15"
+  },
+  "page_footer": {
+    "date_summary": "Jan'15 (12/31/14 - 02/01/15)",
+    "notes": "Among aware & familiar. Green/Red color indicates significant difference vs. Dec'14 and STYL."
+  },
+  "data_header": {
+    "percentage_header": "Jan'15",
+    "delta_month_header": "Δ from Dec'14",
+    "delta_stly_header": "Δ from STLY"
+  },
+  "datasets": [
+    {
+      "title": "Choosey",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "15",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "30",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "22",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "27",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "1",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Exciting",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "25",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "1",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "29",
+          "delta_at_month": {
+            "value": "2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-1",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "32",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "23",
+          "delta_at_month": {
+            "value": "-2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-4",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Nuturing",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "34",
+          "delta_at_month": {
+            "value": "-4",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "36",
+          "delta_at_month": {
+            "value": "-2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "39",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "38",
+          "delta_at_month": {
+            "value": "-4",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-4",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Outdated",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "14",
+          "delta_at_month": {
+            "value": "-2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "3",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "7",
+          "delta_at_month": {
+            "value": "1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "2",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "10",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-1",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "8",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "2",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Uncomplicated",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "31",
+          "delta_at_month": {
+            "value": "-3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-7",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "51",
+          "delta_at_month": {
+            "value": "-2",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "2",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "34",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-8",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "38",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Unique",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "20",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-1",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "34",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-1",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "27",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-4",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "24",
+          "delta_at_month": {
+            "value": "0",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-1",
+            "change": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Wholesome",
+      "brands": [
+        {
+          "icon_image": "minute_maid.png",
+          "percentage_at_month": "45",
+          "delta_at_month": {
+            "value": "-3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "simply_orange.png",
+          "percentage_at_month": "51",
+          "delta_at_month": {
+            "value": "-3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-4",
+            "change": "neutral"
+          }
+        },
+        {
+          "icon_image": "tropicana.png",
+          "percentage_at_month": "52",
+          "delta_at_month": {
+            "value": "-1",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-8",
+            "change": "negative"
+          }
+        },
+        {
+          "icon_image": "floridas_natural.png",
+          "percentage_at_month": "52",
+          "delta_at_month": {
+            "value": "-3",
+            "change": "neutral"
+          },
+          "delta_stly": {
+            "value": "-6",
+            "change": "negative"
+          }
+        }
+      ]
+    }
+  ]
+}
