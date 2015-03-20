@@ -15,15 +15,15 @@
       "title": "Total Ad Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "30"
         },
         {
-          "icon_image": "simply_juice.png",
+          "icon_image": "img/simply_juice.png",
           "percentage_at_month": "17"
         },
         {
-          "icon_image": "ocean_spray.png",
+          "icon_image": "img/ocean_spray.png",
           "percentage_at_month": "29"
         }
       ]
@@ -32,15 +32,15 @@
       "title": "Unaided Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "29"
         },
         {
-          "icon_image": "simply_juice.png",
+          "icon_image": "img/simply_juice.png",
           "percentage_at_month": "10"
         },
         {
-          "icon_image": "ocean_spray.png",
+          "icon_image": "img/ocean_spray.png",
           "percentage_at_month": "23"
         }
       ]
@@ -49,15 +49,15 @@
       "title": "Total Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "96"
         },
         {
-          "icon_image": "simply_juice.png",
+          "icon_image": "img/simply_juice.png",
           "percentage_at_month": "72"
         },
         {
-          "icon_image": "ocean_spray.png",
+          "icon_image": "img/ocean_spray.png",
           "percentage_at_month": "92"
         }
       ]

@@ -17,7 +17,7 @@
       "title": "Total Awareness",
       "brands": [
         {
-          "icon_image": "mmps-mm-logo.png",
+          "icon_image": "img/mmps-mm-logo.png",
           "percentage_at_month": "56",
           "delta_at_month": {
             "value": "3",

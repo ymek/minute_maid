@@ -17,7 +17,7 @@
       "title": "Choosey",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "15",
           "delta_at_month": {
             "value": "-1",
@@ -29,7 +29,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "30",
           "delta_at_month": {
             "value": "1",
@@ -41,7 +41,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "22",
           "delta_at_month": {
             "value": "1",
@@ -53,7 +53,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "27",
           "delta_at_month": {
             "value": "0",
@@ -70,7 +70,7 @@
       "title": "Exciting",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "25",
           "delta_at_month": {
             "value": "1",
@@ -82,7 +82,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "29",
           "delta_at_month": {
             "value": "2",
@@ -94,7 +94,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "32",
           "delta_at_month": {
             "value": "0",
@@ -106,7 +106,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "23",
           "delta_at_month": {
             "value": "-2",
@@ -123,7 +123,7 @@
       "title": "Nuturing",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "34",
           "delta_at_month": {
             "value": "-4",
@@ -135,7 +135,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "36",
           "delta_at_month": {
             "value": "-2",
@@ -147,7 +147,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "39",
           "delta_at_month": {
             "value": "-1",
@@ -159,7 +159,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "38",
           "delta_at_month": {
             "value": "-4",
@@ -176,7 +176,7 @@
       "title": "Outdated",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "14",
           "delta_at_month": {
             "value": "-2",
@@ -188,7 +188,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "7",
           "delta_at_month": {
             "value": "1",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "10",
           "delta_at_month": {
             "value": "-1",
@@ -212,7 +212,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "8",
           "delta_at_month": {
             "value": "0",
@@ -229,7 +229,7 @@
       "title": "Uncomplicated",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "31",
           "delta_at_month": {
             "value": "-3",
@@ -241,7 +241,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "51",
           "delta_at_month": {
             "value": "-2",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "34",
           "delta_at_month": {
             "value": "-1",
@@ -265,7 +265,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "38",
           "delta_at_month": {
             "value": "-1",
@@ -282,7 +282,7 @@
       "title": "Unique",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "20",
           "delta_at_month": {
             "value": "-1",
@@ -294,7 +294,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "34",
           "delta_at_month": {
             "value": "-1",
@@ -306,7 +306,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "27",
           "delta_at_month": {
             "value": "-1",
@@ -318,7 +318,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "24",
           "delta_at_month": {
             "value": "0",
@@ -335,7 +335,7 @@
       "title": "Wholesome",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "45",
           "delta_at_month": {
             "value": "-3",
@@ -347,7 +347,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "51",
           "delta_at_month": {
             "value": "-3",
@@ -359,7 +359,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "52",
           "delta_at_month": {
             "value": "-1",
@@ -371,7 +371,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "52",
           "delta_at_month": {
             "value": "-3",

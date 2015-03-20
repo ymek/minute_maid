@@ -17,7 +17,7 @@
       "title": "Total Ad Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "23",
           "delta_at_month": {
             "value": "-1",
@@ -29,7 +29,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "20",
           "delta_at_month": {
             "value": "-1",
@@ -41,7 +41,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "32",
           "delta_at_month": {
             "value": "1",
@@ -53,7 +53,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "26",
           "delta_at_month": {
             "value": "-1",
@@ -70,7 +70,7 @@
       "title": "Unaided Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "51",
           "delta_at_month": {
             "value": "-1",
@@ -82,7 +82,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "30",
           "delta_at_month": {
             "value": "0",
@@ -94,7 +94,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "68",
           "delta_at_month": {
             "value": "1",
@@ -106,7 +106,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "14",
           "delta_at_month": {
             "value": "1",
@@ -123,7 +123,7 @@
       "title": "Total Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid.png",
+          "icon_image": "img/minute_maid.png",
           "percentage_at_month": "98",
           "delta_at_month": {
             "value": "0",
@@ -135,7 +135,7 @@
           }
         },
         {
-          "icon_image": "simply_orange.png",
+          "icon_image": "img/simply_orange.png",
           "percentage_at_month": "85",
           "delta_at_month": {
             "value": "-2",
@@ -147,7 +147,7 @@
           }
         },
         {
-          "icon_image": "tropicana.png",
+          "icon_image": "img/tropicana.png",
           "percentage_at_month": "99",
           "delta_at_month": {
             "value": "0",
@@ -159,7 +159,7 @@
           }
         },
         {
-          "icon_image": "floridas_natural.png",
+          "icon_image": "img/floridas_natural.png",
           "percentage_at_month": "91",
           "delta_at_month": {
             "value": "-1",

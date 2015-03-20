@@ -17,7 +17,7 @@
       "title": "Total Ad Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid_lemonade.png",
+          "icon_image": "img/minute_maid_lemonade.png",
           "percentage_at_month": "36",
           "delta_at_month": {
             "value": "2",
@@ -29,7 +29,7 @@
           }
         },
         {
-          "icon_image": "simply_lemonade.png",
+          "icon_image": "img/simply_lemonade.png",
           "percentage_at_month": "23",
           "delta_at_month": {
             "value": "0",
@@ -41,7 +41,7 @@
           }
         },
         {
-          "icon_image": "tropicana_lemonade.png",
+          "icon_image": "img/tropicana_lemonade.png",
           "percentage_at_month": "26",
           "delta_at_month": {
             "value": "0",
@@ -58,7 +58,7 @@
       "title": "Unaided Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid_lemonade.png",
+          "icon_image": "img/minute_maid_lemonade.png",
           "percentage_at_month": "53",
           "delta_at_month": {
             "value": "1",
@@ -70,7 +70,7 @@
           }
         },
         {
-          "icon_image": "simply_lemonade.png",
+          "icon_image": "img/simply_lemonade.png",
           "percentage_at_month": "27",
           "delta_at_month": {
             "value": "-1",
@@ -82,7 +82,7 @@
           }
         },
         {
-          "icon_image": "tropicana_lemonade.png",
+          "icon_image": "img/tropicana_lemonade.png",
           "percentage_at_month": "23",
           "delta_at_month": {
             "value": "1",
@@ -99,7 +99,7 @@
       "title": "Total Brand Awareness",
       "brands": [
         {
-          "icon_image": "minute_maid_lemonade.png",
+          "icon_image": "img/minute_maid_lemonade.png",
           "percentage_at_month": "95",
           "delta_at_month": {
             "value": "1",
@@ -111,7 +111,7 @@
           }
         },
         {
-          "icon_image": "simply_lemonade.png",
+          "icon_image": "img/simply_lemonade.png",
           "percentage_at_month": "80",
           "delta_at_month": {
             "value": "1",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "icon_image": "tropicana_lemonade.png",
+          "icon_image": "img/tropicana_lemonade.png",
           "percentage_at_month": "86",
           "delta_at_month": {
             "value": "2",
