@@ -241,5 +241,4 @@ jQuery(function($) {
     };
 
     App.init();
-
 });
