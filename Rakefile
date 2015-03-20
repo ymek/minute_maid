@@ -41,6 +41,9 @@ namespace :dist do
     debug("Copying HTML into: #{DIST_DIR}")
     FileUtils.cp(File.expand_path('index.html', CURRENT_DIR), DIST_DIR)
 
+    debug("Copying vendor CSS into: #{CSS_DIR}")
+    FileUtils.cp_r(File.expand_path('css/vendor', CURRENT_DIR), CSS_DIR)
+
     debug("Copying JS into: #{JS_DIR}")
     FileUtils.cp_r(File.expand_path('js', CURRENT_DIR), DIST_DIR)
   end
