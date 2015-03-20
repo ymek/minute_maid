@@ -49,7 +49,7 @@ jQuery(function($) {
 
             Router({
                 '/:resource/:dataset': function(resource, dataset) {
-                    this.endpoint = 'api/' + resource + '/' + dataset;
+                    this.endpoint = window.location.pathname + '/api/' + resource + '/' + dataset;
                     this.renderDataFromEndpoint(this.endpoint);
                 }.bind(this)
             })
@@ -161,7 +161,7 @@ jQuery(function($) {
             });
         },
         renderIndexNav: function() {
-            $.when(Api.load('api/index.json')).done(function() {
+            $.when(Api.load(window.location.pathname + '/api/index.json')).done(function() {
                 var indexNavViewContext = {
                     date_range: Api.lastResultData['date_range'],
                     logo_image: Api.lastResultData['logo_image'],
