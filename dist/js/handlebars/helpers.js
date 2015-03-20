@@ -7,7 +7,7 @@ jQuery(function($) {
 
     Handlebars.registerHelper('report-type-link', function(endpoint) {
         var text = endpoint;
-        // NOTE: We tack 'awareness' on to make routing cleaner, and to
+        // NOTE: We tack on 'awareness' to make routing cleaner, and to
         // 'automagically' load the initial data view page
         var result = '<a href="#/' + endpoint + '/awareness">' + text.replace('-', ' ') + '</a>';
 
@@ -40,7 +40,7 @@ jQuery(function($) {
     Handlebars.registerHelper('brand-view-link', function(endpoint) {
         var newPath = '';
         var css = '';
-        var text = endpoint;
+        var text = endpoint.replace('-', ' ');
         var currentRoute = window.location.hash.slice(1);
         var baseRoute = currentRoute.slice(0, currentRoute.lastIndexOf('/'));
 
@@ -52,21 +52,21 @@ jQuery(function($) {
         }
         newPath = baseRoute + '/' + endpoint;
 
-        var result = '<a href="#' + newPath + '" ' + css + '>' + text.replace('-', ' ') + '</a>';
-
+        var result = '<a href="#' + newPath + '" ' + css + '>' + text + '</a>';
         return new Handlebars.SafeString(result);
     });
 
     Handlebars.registerHelper('delta-view-row', function(delta) {
-      if (delta === undefined) {
-        return '<h6 class="' + cssClass + '">' + '</h6>';
+        var sign = '';
+        var value = '';
+        var cssClass = '';
 
-      } else {
-        var value = parseInt(delta['value']);
-        var cssClass = delta['change'];
-        var sign = (value > 0) ? '+' : '';
+        if (delta !== undefined) {
+            value = parseInt(delta['value']);
+            cssClass = delta['change'];
+            sign = (value > 0) ? '+' : '';
+        }
 
         return '<h6 class="' + cssClass + '">' + sign + value + '</h6>';
-      }
     });
 });
