@@ -30,6 +30,13 @@ jQuery(function($) {
           var mediaQuery = window.matchMedia('(max-device-width: 767px)');
           return mediaQuery.matches;
         },
+        buildEndpoint: function(resource, dataset) {
+            var basePath = window.location.pathname;
+            if (basePath.slice(-1) !== '/') {
+              basePath += '/';
+            }
+            return basePath + 'api/' + resource + '/' + dataset;
+        },
         init: function() {
             this.pageHeader = {};
             this.pageFooter = {};
@@ -49,7 +56,7 @@ jQuery(function($) {
 
             Router({
                 '/:resource/:dataset': function(resource, dataset) {
-                    this.endpoint = window.location.pathname + '/api/' + resource + '/' + dataset;
+                    this.endpoint = this.buildEndpoint(resource, dataset);
                     this.renderDataFromEndpoint(this.endpoint);
                 }.bind(this)
             })
